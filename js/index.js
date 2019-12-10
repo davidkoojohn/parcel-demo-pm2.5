@@ -1,6 +1,6 @@
 import jsonp from 'jsonp'
 
-jsonp('http://weather.gtimg.cn/aqi/cityrank.json', {
+jsonp('https://weather.gtimg.cn/aqi/cityrank.json', {
   name: 'cityrank'
 }, (err, data) => {
   if (data) {
