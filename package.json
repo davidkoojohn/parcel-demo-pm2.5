@@ -1,0 +1,15 @@
+{
+  "name": "parcel-demo-pm2.5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:davidkoojohn/parcel-demo-pm2.5.git",
+  "author": "guozhao <davidkoojohn@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html -p 5000",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
