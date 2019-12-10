@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "rm -rf dist/* & parcel index.html -p 5000",
-    "build": "rm -rf dist/* & parcel build index.html",
-    "deploy":"gh-pages -d dist"
+    "build": "rm -rf dist/* & parcel build index.html"
   },
   "dependencies": {
     "gh-pages": "^2.1.1",
