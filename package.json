@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "parcel entry.js --https",
     "start": "rm -rf dist/* & parcel index.html -p 5000",
-    "build": "rm -rf dist/* & parcel build index.html --public-url ./parcel-demo-pm2.5",
+    "build": "rm -rf dist/* & parcel build index.html --public-url ./",
     "predeploy": "npm run build && git add . && git commit -m 'chore: build demo' --allow-empty && git push",
     "deploy": "git subtree push --prefix=dist origin gh-pages"
   },
