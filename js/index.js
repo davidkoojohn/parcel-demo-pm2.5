@@ -1,17 +1,17 @@
 $(function () {
-  var $loading = $('.loading')
+  const $loading = $('.loading')
   $.ajax({
     url: 'http://weather.gtimg.cn/aqi/cityrank.json',
     dataType: 'jsonp',
     jsonpCallback: 'cityrank',
     success: function (res) {
       $.each(res, function (index, item) {
-        var itemHtml = '<section class="item">'+
-          '<span class="rank">' + (index + 1) + '</span>'+
-          '<span class="pm-25">'+ item.pm2_5 +'</span>'+
-          '<span class="area">' + item.area + '</span>'+
-          '<span class="quality">' + item.quality + '</span>' +
-          '</section>'
+        const itemHtml = `<section class="item">
+                          <span class="rank">${index + 1}</span>
+                          <span class="pm-25">${item.pm2_5}</span>
+                          <span class="area">${item.area}</span>
+                          <span class="quality">${item.quality}</span>
+                        </section>`
         $(itemHtml).appendTo($('.list'))
       })
     },
