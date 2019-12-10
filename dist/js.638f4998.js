@@ -13,4 +13,4 @@ var e=require("debug")("jsonp");module.exports=t;var n=0;function o(){}function 
 },{"debug":"jD9Y"}],"QvaY":[function(require,module,exports) {
 "use strict";var n=a(require("jsonp"));function a(n){return n&&n.__esModule?n:{default:n}}(0,n.default)("http://weather.gtimg.cn/aqi/cityrank.json",{name:"cityrank"},function(n,a){a?a.map(function(n,a){var e='<section class="item">\n                        <span class="rank">'.concat(a+1,'</span>\n                        <span class="pm-25">').concat(n.pm2_5,'</span>\n                        <span class="area">').concat(n.area,'</span>\n                        <span class="quality">').concat(n.quality,"</span>\n                      </section>");document.querySelector(".list").innerHTML+=e}):document.querySelector(".list").innerHTML='<div class="error">数据加载失败，请刷新重试！！！</div>',document.querySelector(".loading").style.display="none"});
 },{"jsonp":"R8xL"}]},{},["QvaY"], null)
-//# sourceMappingURL=js.638f4998.js.map
+//# sourceMappingURL=/js.638f4998.js.map
